@@ -1,7 +1,13 @@
+body {
+    background-color: rgb(41, 41, 41);
+}
+
 h1 {
+    color: white;
     font-family: Arial;
 }
 
 p {
+    color: white;
     font-family: Arial;
 }
