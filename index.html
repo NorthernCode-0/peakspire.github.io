@@ -65,15 +65,21 @@
         </style>
     </head>
     <body>
-        
+        <script>
+            function copyTXT(){
+                navigator.clipboard.writeText('loadstring(game:HttpGet("https://raw.githubusercontent.com/NorthernCode-0/doomspire/main/Doomspire.lua"))()');
+                alert("Copied Script To Clipboard")
+            }
+        </script>
         <h1>Peakspire</h1>
         <p class="color_DARK_GRAY">Free doomspire script for roblox</p>
         <p>
-            <button onclick="window.location.href='https://pastebin.com/raw/ayVdKt1D';">
-                Script
+            <button onclick=copyTXT()>
+                Copy Script
             </button>
 
             <button onclick="window.location.href='https://discord.gg/BdxMppMR49';">
+
                 Discord
             </button>
         </p>
