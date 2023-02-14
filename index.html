@@ -1,103 +1,57 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        <title>Peakspire</title>
-        <link rel="icon" href="Images/Peakspire.png">
-        <meta name="color-scheme" content="light dark">
-
         <meta content="Peakspire" property="og:title">
-        <meta content="Doomspire lego game Exploit :D." property="og:description">
+        <meta content="Doomspire roblox script" property="og:description">
         <meta content="Peakspire" property="og:site_name">
-
+        <title>Peaksire</title>
+        <link rel="icon" href="PeakSpireNoBG.png">
         <style>
-
             @font-face {
-                font-family: 'SourceSansPro-Regular';
-                src: url(Fonts/SourceSansPro-Regular.ttf) format('truetype');
-            }
-
-            @font-face {
-                font-family: 'SourceSansPro-SemiBold';
-                src: url(Fonts/SourceSansPro-SemiBold.ttf) format('truetype');
-            }
-
-            @font-face {
-                font-family: 'SourceSansPro-Bold';
-                src: url(Fonts/SourceSansPro-Bold.ttf) format('truetype');
-            }
-
-            .p-bold {
-                font-weight: bold;
-                font-size: 25px;
-                text-align: center;
-                font-family: 'SourceSansPro-Bold';
-            }
-            .color_DARK_GRAY {
-                color: rgb(50, 50, 50);
-            }
-            h1 {
-                font-weight: bolder;
-                font-size: 75px;
-                text-align: center;
-                color: white;
-                font-family: 'SourceSansPro-SemiBold';
+                font-family: "LemonMilk";
+                src: url(Fonts/Lemon\ Milk\ Pro\ Regular.otf);
             }
             p {
-                font-weight: bold;
-                font-size: 25px;
                 text-align: center;
+                font-family: "LemonMilk";
                 color: white;
-                font-family: 'SourceSansPro-Regular';
             }
-            div {
-                font-weight: bold;
-                font-size: 25px;
+            body {
+                background-color: rgb(18,18,18);
+            }
+
+            .center {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 80vh;
+            }
+
+            .header {
                 text-align: center;
-                color: white;
-                font-family: 'Inter-Light';
             }
-            a {
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 25px;
-                text-align: center;
-                color: rgb(204, 228, 255);
-                font-family: 'Inter-Light';
-            }
-            img {
-                border-radius: 10%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
+
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
             }
             button {
-                border-radius: 6px;
-                padding: 0.3%;
-                scroll-padding-inline: 2%;
-                font-weight: bold;
-                font-size: 25px;
+                display: inline-block;
+                position: relative;
+                font-family: "LemonMilk";
                 color: white;
                 background-color: rgb(18,18,18);
-                border: 5px solid rgb(18,18,18);
-                font-family: 'SourceSansPro-SemiBold';
+                border: 4px solid rgb(18,18,18);
+                padding: 7.5px 15px;
+                border-radius: 8px;
+                transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
             }
             button:hover {
-                background-color: rgb(25, 25, 25);
-                border: 5px solid rgb(25, 25, 25);
-            }
-            hr{
-                height: 3px;
-                background-color: rgb(50, 50, 50);
-                border: none;
-            }
-            code {
-                font-size: 15px;
-                margin-top: 15px;
-                background-color: rgb(30, 30, 30);
-                border: 10px solid rgb(30, 30, 30);
-                border-radius: 8px;
-            
+                background-color: rgb(26, 26, 26);
+                border: 4px solid rgb(26, 26, 26);
             }
         </style>
     </head>
@@ -108,35 +62,16 @@
                 alert("Copied Script To Clipboard");
             }
         </script>
-        <h1>Peakspire</h1>
-        <p class="color_DARK_GRAY">Doomspire script for lego game.</p>
-        <p>
-            <button onclick=copyTXT()>
-                Copy Script
-            </button>
-
-            <button onclick="window.open('https://discord.gg/BdxMppMR49')">
-                Discord
-            </button>
-            <br>
-            <br>
-            <code>
-                <span style="color: rgb(247, 64, 64);">
-                    loadstring</span>(game:HttpGet(<span style="color: rgb(93, 204, 255);">"https://raw.githubusercontent.com/NorthernCode-0/doomspire/main/Doomspire.lua"</span>))()</code>
-        </p>
-        
-        <img src="Images/Peakspire.png" alt="the image would go here" width="300">
-        <hr>
-        <p>Video:</p>
-        <iframe width="480" height="270" src="https://www.youtube.com/embed/Hdq9IRz7jrE" title="New Doomspire Brickbattle Roblox Script!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;margin-left: auto;margin-right: auto; padding-bottom: 2%;"></iframe>
-
-        <hr>
-
-        <p>Creator</p>
-        <p class="p-bold">
-            <a href="https://www.youtube.com/channel/UCo9fC_MUleg6kXiJFh1c-Ng" class="p-bold">NorthernCode</a>
-        </p>
-        <img src="Images/cat.png" alt="pretend the image was here" width="250">
-
+            <div class="center">
+                <div class="header">
+                  <h1>
+                    <p>Peakspire</p>
+                  </h1>
+                </div>
+                <div class="buttons">
+                  <button onclick="copyTXT()">Copy Script</button>
+                  <button onclick="window.open('https://discord.gg/BdxMppMR49')">Discord</button>
+                </div>
+            </div>
     </body>
 </html>
