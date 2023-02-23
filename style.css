@@ -9,11 +9,13 @@ p {
 }
 
 .fadein {
+    transform: transcslateY(-30px);
     opacity: 0;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 2.4s ease, transform 1.2s ease;
 }
 
 .fade-in {
+    transform: translateY(30px);
     opacity: 1;
 }
 
