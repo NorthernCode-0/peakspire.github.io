@@ -1,6 +1,6 @@
 function copyTXT(){
     navigator.clipboard.writeText('loadstring(game:HttpGet("https://raw.githubusercontent.com/NorthernCode-0/doomspire/main/Doomspire.lua"))()');
-    alert("Copied Script To Clipboard"); 
+    alert("Copied Script To Clipboard");
 }
 
 window.addEventListener('load', function() {
