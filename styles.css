@@ -62,11 +62,26 @@ button {
   border: 4px solid rgb(18, 18, 18);
   padding: 7.5px 15px;
   border-radius: 15px;
-  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0);
 }
 
 button:hover {
   transform: scale(1.05);
   background-color: rgb(26, 26, 26);
   border: 4px solid rgb(26, 26, 26);
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+#notif {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.05% 1%;
+  background-color:rgb(26, 26, 26);
+  border-radius: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 0.25s ease;
 }
